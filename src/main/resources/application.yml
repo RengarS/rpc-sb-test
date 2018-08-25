@@ -1,0 +1,25 @@
+dubbo-style-rpc:
+  config:
+    base-path: com.aries
+    zookeeper-address: 212.64.21.29:2181
+    server-port: 19999
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: zyp231021
+    url: jdbc:mysql://localhost:3306/test
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+  global-config:
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+    refresh-mapper: true
+  mapper-locations: classpath:mappers/*.xml
+
+
+
